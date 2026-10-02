@@ -15,6 +15,8 @@
   <img src="https://img.shields.io/badge/dependencies-zero-6b7280?style=for-the-badge" alt="zero dependencies">
 </p>
 
+<p align="center"><sub>Not affiliated with <a href="https://minecraftforge.net">MinecraftForge</a> — "Forge" is just a name.</sub></p>
+
 ---
 
 Define any number of announcements in `config.yml`; each rotates on its own interval and is delivered to every online player via chat, the action bar, a boss bar, or a title screen. Messages support the full MiniMessage format, including gradients and clickable commands. An original implementation with zero runtime dependencies beyond the Paper API.
