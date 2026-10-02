@@ -1,0 +1,53 @@
+# ForgeAnnouncer configuration
+#
+# Each announcement rotates on its own interval and is delivered to every
+# online player. All messages are MiniMessage; chat messages support click
+# events like <click:run_command:/rules>.
+#
+#   id:               unique name, used by /fannouncer broadcast <id>
+#   messages:         list of MiniMessage strings
+#   interval-seconds: how often this announcement fires
+#   mode:             sequential (cycle in order) or random
+#   delivery:         chat | actionbar | bossbar | title
+#   bossbar-color:    PINK | BLUE | RED | GREEN | YELLOW | PURPLE | WHITE
+#   bossbar-seconds:  how long the boss bar stays visible
+#   title-fade-in:    title fade-in time in ticks (20 = 1 second)
+#   title-stay:       title stay time in ticks
+#   title-fade-out:   title fade-out time in ticks
+
+announcements:
+  - id: welcome
+    messages:
+      - "<gradient:#ffb347:#ff7b1c>Welcome to the server!</gradient> <gray>Read the <click:run_command:/rules><u>rules</u></click> before you play.</gray>"
+      - "<gradient:#ffb347:#ff7b1c>Welcome to the server!</gradient> <gray>Need help? Ask in chat — the community is friendly.</gray>"
+    interval-seconds: 300
+    mode: sequential
+    delivery: chat
+
+  - id: vote
+    messages:
+      - "<aqua><bold>Vote for the server</bold></aqua> <gray>and earn rewards! <click:run_command:/vote><u>Click to vote</u></click></gray>"
+      - "<aqua><bold>Daily reminder:</bold></aqua> <gray>voting keeps the server alive. <click:run_command:/vote><u>Vote now</u></click></gray>"
+    interval-seconds: 600
+    mode: random
+    delivery: bossbar
+    bossbar-color: BLUE
+    bossbar-seconds: 8
+
+  - id: event
+    messages:
+      - "<red><bold>Event starting soon!</bold></red>"
+    interval-seconds: 900
+    mode: sequential
+    delivery: title
+    title-fade-in: 10
+    title-stay: 70
+    title-fade-out: 20
+
+  - id: tip
+    messages:
+      - "<yellow><bold>Tip:</bold></yellow> <gray>You can claim daily rewards with <white>/daily</white>.</gray>"
+      - "<yellow><bold>Tip:</bold></yellow> <gray>Sneak + right-click a door with an empty hand to attune it.</gray>"
+    interval-seconds: 450
+    mode: random
+    delivery: actionbar

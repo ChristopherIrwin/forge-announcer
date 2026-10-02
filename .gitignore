@@ -1,0 +1,27 @@
+# Java
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+.project
+.classpath
+.settings/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle (kept canonical for CI; not used by build.sh)
+.gradle/

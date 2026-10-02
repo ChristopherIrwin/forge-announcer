@@ -1,0 +1,15 @@
+name: ForgeAnnouncer
+version: '1.0.0'
+main: com.forge.announcer.ForgeAnnouncer
+api-version: '26.3'
+author: Forge
+description: Scheduled MiniMessage broadcasts delivered via chat, action bar, boss bar, or title.
+commands:
+  fannouncer:
+    description: Manage scheduled announcements
+    usage: /fannouncer <reload|broadcast <id>|list>
+    permission: forgeannouncer.admin
+permissions:
+  forgeannouncer.admin:
+    description: Administer ForgeAnnouncer (reload, manual broadcast, list)
+    default: op
