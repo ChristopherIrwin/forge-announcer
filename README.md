@@ -1,6 +1,23 @@
-# ForgeAnnouncer
+<p align="center">
+  <img src="assets/logo.webp" width="160" alt="ForgeAnnouncer logo">
+</p>
 
-Scheduled MiniMessage broadcasts for Paper servers. Define any number of announcements in `config.yml`; each rotates on its own interval and is delivered to every online player via chat, the action bar, a boss bar, or a title screen. Messages support the full MiniMessage format, including gradients and clickable commands. An original implementation with zero runtime dependencies beyond the Paper API.
+<h1 align="center">ForgeAnnouncer</h1>
+
+<p align="center"><i>Scheduled MiniMessage broadcasts for Paper servers — chat, action bar, boss bar, and title.</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-ff7b2e?style=for-the-badge" alt="version 1.0.0">
+  <img src="https://img.shields.io/badge/Paper-26.3-2f9e6e?style=for-the-badge" alt="Paper 26.3">
+  <img src="https://img.shields.io/badge/Java-25-f89820?style=for-the-badge" alt="Java 25">
+  <img src="https://img.shields.io/badge/MiniMessage-native-b565d8?style=for-the-badge" alt="MiniMessage native">
+  <img src="https://img.shields.io/badge/4_delivery_channels-2563eb?style=for-the-badge" alt="4 delivery channels">
+  <img src="https://img.shields.io/badge/dependencies-zero-6b7280?style=for-the-badge" alt="zero dependencies">
+</p>
+
+---
+
+Define any number of announcements in `config.yml`; each rotates on its own interval and is delivered to every online player via chat, the action bar, a boss bar, or a title screen. Messages support the full MiniMessage format, including gradients and clickable commands. An original implementation with zero runtime dependencies beyond the Paper API.
 
 ## Features
 
@@ -71,3 +88,7 @@ The build script compiles with `javac` directly (JDK 25 at `~/workspace/.toolcha
 
 - Compiled with `-Werror -Xlint:deprecation`: zero warnings, zero deprecated API usage.
 - Nullness is explicit: every package is `@NotNullByDefault` (JetBrains annotations), with `@Nullable` marked on the few sites where null is genuinely possible (e.g. config lookups for optional keys).
+
+---
+
+<p align="center"><i>Part of the <a href="https://github.com/ChristopherIrwin">Forge</a> plugin suite — original implementations, zero dependencies.</i></p>
